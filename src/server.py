@@ -58,5 +58,5 @@ def calculate():
         system = reform(system)
     return flask.jsonify(openfisca_calculate(system, situation))
 
-def serve():
+def serve(*args):
     app.run()
