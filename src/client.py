@@ -17,4 +17,4 @@ DATA = {
     }
 }
 
-print(json.loads(requests.post("http://localhost:5000/calculate", json=DATA).content))
+print(json.loads(requests.post("https://reform-calculator-server.herokuapp.com/calculate", json=DATA).content))
