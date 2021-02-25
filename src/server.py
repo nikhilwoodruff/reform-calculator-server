@@ -1,5 +1,4 @@
 import flask
-import json
 import dpath
 from openfisca_uk import CountryTaxBenefitSystem
 from openfisca_core.simulation_builder import SimulationBuilder
@@ -59,4 +58,5 @@ def calculate():
         system = reform(system)
     return flask.jsonify(openfisca_calculate(system, situation))
 
-app.run()
+def serve():
+    app.run()
